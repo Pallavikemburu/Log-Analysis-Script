@@ -72,19 +72,19 @@ def analyze_log_file(log_file_path, failed_login_threshold=10):
         csv_writer = csv.writer(csvfile)
         
         # Requests per IP section
-        csv_writer.writerow(["Requests per IP"])
+        csv_writer.writerow(["Requests per IP:"])
         csv_writer.writerow(["IP Address", "Request Count"])
         csv_writer.writerows(sorted_ip_requests)
         
         # Most Accessed Endpoint section
         csv_writer.writerow([])  # Empty row for separation
-        csv_writer.writerow(["Most Accessed Endpoint"])
+        csv_writer.writerow(["Most Accessed Endpoint:"])
         csv_writer.writerow(["Endpoint", "Access Count"])
         csv_writer.writerow([most_accessed_endpoint, endpoint_access[most_accessed_endpoint]])
         
         # Suspicious Activity section
         csv_writer.writerow([])  # Empty row for separation
-        csv_writer.writerow(["Suspicious Activity"])
+        csv_writer.writerow(["Suspicious Activity:"])
         csv_writer.writerow(["IP Address", "Failed Login Count"])
         csv_writer.writerows(suspicious_ips.items())
 
