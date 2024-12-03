@@ -2,7 +2,7 @@
 
 
 ## Overview
-Python script that processes log files to extract and analyze key information
+Python script that processes log files to extract and analyze key information.
 
 ## Features
 - IP request counting
