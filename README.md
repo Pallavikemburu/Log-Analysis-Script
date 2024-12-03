@@ -1,9 +1,8 @@
 # Log-Analysis-Script
 
-# Log Analysis Script
 
 ## Overview
-Python script for analyzing web server logs, focusing on IP request tracking, endpoint access, and suspicious activity detection.
+Python script that processes log files to extract and analyze key information
 
 ## Features
 - IP request counting
@@ -17,7 +16,7 @@ Python script for analyzing web server logs, focusing on IP request tracking, en
 
 ## Usage
 ```bash
-python log_analysis.py
+python log_analysis_script.py
 ```
 
 ## Key Functionalities
